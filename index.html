@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Off Bulb</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #333;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main .bulbHead {
+            padding: 4rem 0;
+            /* height: auto;
+            width: 24rem; */
+        }
+
+        .main .bulbHead img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .main .btn {
+            width: 10rem;
+            height: 3rem;
+        }
+
+        .main .btn #on-off-btn {
+            width: 100%;
+            height: 100%;
+            font-size: 1.4rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow:
+                2px 2px 1.3px rgba(255, 255, 255, 0.068),
+                6.7px 6.7px 4.5px rgba(255, 255, 255, 0.085),
+                12px 14px 15px rgba(255, 255, 255, 0.14);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="bulbHead">
+            <img id="bulb" src="/Bulb/bulb-off.jpg" alt="">
+        </div>
+
+        <div class="btn">
+            <button id="on-off-btn">ON</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
